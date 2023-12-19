@@ -32,7 +32,7 @@ build/
 ### VS Code ###
 .vscode/
 
-#Ignore Folders and Files
+#Ignore Files
 ### Sensitive Information ###
 application.properties
 ### beans.xml copy from NorthwindTraders Intial Spring Exercise ###
