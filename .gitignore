@@ -1,17 +1,3 @@
-### Sensitive Information ###
-src/main/resources/application.properties
-
-### .gitignore File ###
-.gitignore
-
-### .mvn Folders/Files ###
-.mvn
-mvnw
-mvnw.cmd
-
-### beans.xml copy from NorthwindTraders Intial Spring Exercise ###
-src/main/resources/beans.csv
-
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar

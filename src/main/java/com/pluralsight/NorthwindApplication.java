@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-import com.pluralsight.dao.ProductDAOInterface;
+import com.pluralsight.dao.ProductDAO;
 import com.pluralsight.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -10,9 +10,9 @@ import java.util.Scanner;
 
 @Component
 public class NorthwindApplication implements CommandLineRunner {
-    private final ProductDAOInterface pDAO;
+    private final ProductDAO pDAO;
     @Autowired
-    public NorthwindApplication(ProductDAOInterface pDAO) {
+    public NorthwindApplication(ProductDAO pDAO) {
         this.pDAO = pDAO;
     }
     @Override
@@ -55,7 +55,7 @@ public class NorthwindApplication implements CommandLineRunner {
                         System.out.println("Product added successfully!");
                         break;
                     case 0:
-                        System.out.println("Exiting MainApp...");
+                        System.out.println("Exiting...");
                         break;
                     default:
                         System.out.println("Invalid choice. Please try again.");
