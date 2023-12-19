@@ -1,5 +1,7 @@
 package com.pluralsight.model;
 
+import java.util.Objects;
+
 public class Product {
     private int productId;
     private String name;
@@ -43,6 +45,21 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return getProductId() == product.productId &&
+               Double.compare(product.price, price) == 0 &&
+               Objects.equals(name, product.name) &&
+               Objects.equals(category, product.category);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(productId);
     }
     @Override
     public String toString() {
