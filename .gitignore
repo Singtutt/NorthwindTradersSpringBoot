@@ -34,6 +34,7 @@ build/
 
 #Ignore Folders and Files
 ### Sensitive Information ###
+src/main/resources/*
 src/main/resources/application.properties
 ### beans.xml copy from NorthwindTraders Intial Spring Exercise ###
 src/main/resources/beans.csv
