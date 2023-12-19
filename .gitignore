@@ -1,9 +1,10 @@
+#Ignore Files
 ### Sensitive Information ###
 src/main/resources/application.properties
-
 ### .gitignore File ###
 .gitignore
 
+#Ignore Folder/Files
 ### .mvn Folders/Files ###
 .mvn
 mvnw
